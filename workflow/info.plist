@@ -103,11 +103,11 @@
 	<key>createdby</key>
 	<string>Ramiro Araujo</string>
 	<key>description</key>
-	<string>Switch back and forth between UNIX filepaths and Windows filepaths, based on previous mapping configuration between Volume names and Network Drive names</string>
+	<string>Convert back and forth between UNIX filepaths and Windows filepaths, based on previous mapping configuration between Volume names and Network Drive names</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Switch OS Path</string>
+	<string>Convert OS Path</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -141,7 +141,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/ruby ./switch-path.rb {query}</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -158,13 +158,13 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>62</integer>
 				<key>keyword</key>
-				<string>oswitch</string>
+				<string>convert</string>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./switch-path-feedback.rb {query}</string>
+				<string>/usr/bin/ruby ./switch-path-feedback.rb "`echo '{query}' | tr '\n' ' '`"</string>
 				<key>subtext</key>
 				<string>Write or paste a Windows or UNIX path</string>
 				<key>title</key>
@@ -202,7 +202,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/ruby ./switch-path.rb {query}</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -217,9 +217,9 @@
 			<key>config</key>
 			<dict>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>126</integer>
 				<key>script</key>
-				<string></string>
+				<string>open "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -263,7 +263,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>oswitchadd</string>
+				<string>convert add</string>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
@@ -271,7 +271,7 @@
 				<key>subtext</key>
 				<string>Write a Windows Drive followed by a UNIX Volume name</string>
 				<key>title</key>
-				<string>Add new mapping</string>
+				<string>Add new mapping for OS Path conversion</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -326,13 +326,15 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>oswitchlist</string>
+				<string>convert list</string>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
 				<string>/usr/bin/ruby ./list-config-feedback.rb {query}</string>
+				<key>subtext</key>
+				<string>and optionally delete a map configuration</string>
 				<key>title</key>
-				<string>List mapped configurations</string>
+				<string>List mapped configurations for OS Path conversion</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

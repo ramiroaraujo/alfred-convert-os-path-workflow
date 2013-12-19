@@ -16,7 +16,7 @@ Alfred.with_friendly_error do |alfred|
 
   # detect if windows or unix path
   to_unix = /^([a-z]):\\/i.match path
-  to_win = /\/Volumes\//i.match path
+  to_win = /\/Volumes\/([^\/]+)/i.match path
 
   if to_unix
     if !config.has_drive? to_unix[1]
@@ -30,7 +30,7 @@ Alfred.with_friendly_error do |alfred|
       fb.add_item({
                       :title => 'Press ENTER con convert the path',
                       :subtitle => 'It will copy the converted path to the clipboard',
-                      :arg => path,
+                      :arg => "unix-#{path}",
                       :valid => 'yes',
                   })
     end
@@ -46,7 +46,7 @@ Alfred.with_friendly_error do |alfred|
       fb.add_item({
                       :title => 'Press ENTER con convert the path',
                       :subtitle => 'It will copy the converted path to the clipboard',
-                      :arg => path,
+                      :arg => "win-#{path}",
                       :valid => 'yes',
                   })
     end

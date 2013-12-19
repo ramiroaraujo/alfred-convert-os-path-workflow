@@ -1,13 +1,13 @@
 ## workflow build config
 
 # id and name for the workflow (bundle id = domain.id)
-id: alfred-switch-os-path-workflow
+id: alfred-convert-os-path-workflow
 
 # base domain
 domain: com.tumblr.ramiroaraujo
 
-name: Switch OS Path
-description: Switch back and forth between UNIX filepaths and Windows filepaths, based on previous mapping configuration between Volume names and Network Drive names
+name: Convert OS Path
+description: Convert back and forth between UNIX filepaths and Windows filepaths, based on previous mapping configuration between Volume names and Network Drive names
 created_by: Ramiro Araujo
 website: https://github.com/ramiroaraujo/alfred-switch-os-path-workflow
 readme: readme

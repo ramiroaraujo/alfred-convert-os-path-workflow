@@ -33,6 +33,14 @@ class WorkflowConfig
     @config.has_value? volume
   end
 
+  def get_volume drive
+    @config[drive]
+  end
+
+  def get_drive volume
+    @config.index volume
+  end
+
   def load_config
     #init configuration file, create new if inexistent
     File.new 'config.yml' if !File.exists? 'config.yml'
