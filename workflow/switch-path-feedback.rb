@@ -28,7 +28,7 @@ Alfred.with_friendly_error do |alfred|
     else
       # ok to convert
       fb.add_item({
-                      :title => 'Press ENTER con convert the path',
+                      :title => 'Press ENTER con convert the path to UNIX format',
                       :subtitle => 'It will copy the converted path to the clipboard',
                       :arg => "unix-#{path}",
                       :valid => 'yes',
@@ -44,7 +44,7 @@ Alfred.with_friendly_error do |alfred|
     else
       # ok to convert
       fb.add_item({
-                      :title => 'Press ENTER con convert the path',
+                      :title => 'Press ENTER con convert the path to Windows format',
                       :subtitle => 'It will copy the converted path to the clipboard',
                       :arg => "win-#{path}",
                       :valid => 'yes',
