@@ -21,16 +21,16 @@ class WorkflowConfig
 
   def list
     arr = []
-    @config.each { |win, unix| arr << {'win' => win, 'unix' => unix} }
+    @config.each { |win, unix| arr << {'win' => win, 'unix' => unix} } if @config
     arr
   end
 
   def has_drive? drive
-    @config.has_key? drive
+    @config.has_key? drive if @config
   end
 
   def has_volume? volume
-    @config.has_value? volume
+    @config.has_value? volume if @config
   end
 
   def get_volume drive
@@ -45,6 +45,7 @@ class WorkflowConfig
     #init configuration file, create new if inexistent
     File.new 'config.yml' if !File.exists? 'config.yml'
     @config = YAML.load File.open 'config.yml'
+    @config = Hash.new if !@config
   end
 
   def write_config

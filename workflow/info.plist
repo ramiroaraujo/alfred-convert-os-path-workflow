@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.tumblr.ramiroaraujo.alfred-switch-os-path-workflow</string>
+	<string>com.tumblr.ramiroaraujo.alfred-convert-os-path-workflow</string>
 	<key>connections</key>
 	<dict>
 		<key>0ADB2D36-A302-472D-8B5A-4016C2F86788</key>
@@ -263,7 +263,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>convert add</string>
+				<string>convertadd</string>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
@@ -326,7 +326,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>convert list</string>
+				<string>convertlist</string>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>

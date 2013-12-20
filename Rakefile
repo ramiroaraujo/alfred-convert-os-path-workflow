@@ -118,7 +118,7 @@ task :export => [:config] do
 
   # clean up workflow files for export
   Dir.foreach('.') do |file|
-    FileUtils.rmtree file if %w(Gemfile Gemfile.lock .bundle).include? file
+    FileUtils.rmtree file if %w(Gemfile Gemfile.lock .bundle config.yml).include? file
   end
   Dir.chdir('bundle/ruby/2.0.0') do
     Dir.foreach('.') do |dir|
