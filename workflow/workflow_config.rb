@@ -42,8 +42,6 @@ class WorkflowConfig
   end
 
   def load_config
-    #init configuration file, create new if inexistent
-    File.new 'config.yml' if !File.exists? 'config.yml'
     @config = YAML.load File.open 'config.yml'
     @config = Hash.new if !@config
   end
