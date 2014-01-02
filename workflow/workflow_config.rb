@@ -1,4 +1,3 @@
-require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
 require_relative 'bundle/bundler/setup'
 require 'alfred'
 require 'yaml'
@@ -38,7 +37,7 @@ class WorkflowConfig
   end
 
   def get_drive volume
-    @config.index volume
+    @config.key volume
   end
 
   def load_config
