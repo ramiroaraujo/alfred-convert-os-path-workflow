@@ -6,9 +6,10 @@ require 'bundle/bundler/setup'
 require 'workflow_config.rb'
 
 win_drive = ARGV[0]
-unix_volume = ARGV[1]
 
 config = WorkflowConfig.new
+unix_volume = config.get_volume win_drive
+
 config.remove win_drive
 config.write_config
 
