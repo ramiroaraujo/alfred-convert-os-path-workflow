@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
-require_relative 'bundle/bundler/setup'
-require_relative 'workflow_config.rb'
+require 'bundle/bundler/setup'
+require 'workflow_config.rb'
 
 win_drive = ARGV[0]
 unix_volume = ARGV[1]
