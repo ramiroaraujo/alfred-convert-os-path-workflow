@@ -1,10 +1,4 @@
-alfred-switch-os-path-workflow
-==============================
-
-Simple workflow to switch between unix and windows filesystem path syntax.
-
-
-# Convert OS Paths Workflor for Alfred app
+# Convert OS Paths Workflow for Alfred app
 
 Worflow for swithching back and forth between UNIX and Windows Paths, specifically between Mapped Drives and Mounted Network Volumes.
 It features the actual switching of paths, optionally open the path in Finder, and configuration options to list, add and remove mappings between Windows drives and UNIX volumes.
