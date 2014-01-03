@@ -19,7 +19,7 @@ You'll need to add one or more mappings before doing the conversions. Check belo
 Type the keyword (default _ftp_) and start typing the name of the favorite to search; dead simple.
 
 
-![search](https://raw.github.com/ramiroaraujo/alfred-convert-os-path-workflow/screenshots/convert-add.png)
+![search](https://raw.github.com/ramiroaraujo/alfred-convert-os-path-workflow/master/screenshots/convert-add.png)
 
 
 ## Installation
