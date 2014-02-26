@@ -120,8 +120,9 @@ task :export => [:config] do
 
   # clean up workflow files for export
   Dir.foreach('.') do |file|
-    FileUtils.rmtree file if %w(Gemfile Gemfile.lock .bundle).include? file
+    FileUtils.rmtree file if %w(Gemfile Gemfile.lock .bundle config.yml).include? file
   end
+  `echo --- {} > config.yml`
   Dir.chdir('bundle/ruby') do
     Dir.foreach('.') do |dir|
       next if dir == '.' || dir == '..'
