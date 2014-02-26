@@ -2,6 +2,3 @@ workflow/.bundle
 workflow/bundle
 .idea/workspace.xml
 .idea/tasks.xml
-
-# project specific
-workflow/config.yml
