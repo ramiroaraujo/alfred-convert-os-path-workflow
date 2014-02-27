@@ -23,9 +23,9 @@ You'll need to add one or more mappings before doing the conversions. Check belo
 
 
 ## Installation
-For OS X 10.9 Mavericks, Download the [alfred-convert-os-path-workflow.alfredworkflow](https://github.com/ramiroaraujo/alfred-convert-os-path-workflow/raw/master/alfred-convert-os-path-workflow.alfredworkflow) and import to Alfred 2.
+For OS X 10.9 Mavericks, Download the [alfred-convert-os-path.alfredworkflow](https://github.com/ramiroaraujo/alfred-convert-os-path-workflow/raw/master/alfred-convert-os-path.alfredworkflow) and import to Alfred 2.
 
-For Previous OS X Versions, Download the [alfred-convert-os-path-workflow.alfredworkflow](https://github.com/ramiroaraujo/alfred-convert-os-path-workflow/raw/pre-mavericks/alfred-convert-os-path-workflow.alfredworkflow) and import to Alfred 2.
+For Previous OS X Versions, Download the [alfred-convert-os-path.alfredworkflow](https://github.com/ramiroaraujo/alfred-convert-os-path-workflow/raw/pre-mavericks/alfred-convert-os-path.alfredworkflow) and import to Alfred 2.
 
 ## Changelog
 * _2014-01-06_ - Released
